@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+.header-div{
+    cursor: pointer;
+    padding-top: 10px;
+}
+.header-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navlinks{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.home-page{
+    display: flex;
+    align-items: center;
+}
+.a-link{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Oswald";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.a-link:hover{
+    color: #FFC222;
+}
+.header-button{
+    font-family:"Oswald";
+    font-size: 17px;
+    font-weight: 600;
+    width: 180px;
+    height: 55px;
+    background: #FFC222;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.header-button:hover{
+    background-color:rgb(255, 115, 0);
+}
+.logo-title{
+     font-family: "Fugaz One";
+     font-size: 24px;
+     font-weight: 400;
+     color: #EE3A43;
+}
+.strelka{
+    margin-top: 7px;
+    margin-left: 5px;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+.home-header{
+    width: 100%;
+    height: 90px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 62px 0px #0016592B;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+}
+.menu_icon{
+    font-size: 40px;
+    display: none;
+    cursor: pointer;
+}
+@media(max-width:1024px){
+    .a-link{
+        font-size: 15px;
+    }
+    .header-button{
+        width: 120px;
+        height: 37px;
+        font-size: 15px;
+    }
+    .navlinks{
+        gap: 10px;
+    }
+    .logo-title{
+        font-size: 18px;
+    }
+    .header-left{
+        gap: 10px;
+    }
+    .logo{
+        width: 100px;
+        height: 50px;
+    }
+}
+@media(max-width:768px){
+    .logo{
+        width: 80px;
+        height: 50px;
+    }
+    .logo-title{
+        font-size: 16px;
+    }
+    .navlinks{
+        display:none;
+    }
+    .header-button{
+        width: 100px;
+        height: 33px;
+    }
+    .home-header{
+        width: 100%;
+        height: 70px;
+    }
+    .header-div{
+        padding: 8px;
+    }
+    .menu_icon{
+        display: block;
+    }
+}
+@media(max-width:500px){
+    .header-button{
+        display: none;
+    }
+    
+}
