@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Footer Styles */
+.footer {
+    background: #F5F8FD;
+    padding: 40px;
+    position: relative;
+    font-family:Fredoka;
+    margin-top: 120px;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  
+  .footer-box {
+    background: #F3274C;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    flex: 1 1 250px;
+  }
+  
+  .footer-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-box p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-column {
+    flex: 1 1 200px;
+  }
+  
+  .footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .newsletter {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .newsletter input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 3px solid #DEDEDE;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: #555;
+  }
+  
+  .newsletter button {
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .footer-separator {
+    border-top: 10px solid #FFD40D;
+    margin: 1.5rem 0;
+    border-radius: 30px;
+  }
+  
+  .footer-copyright {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-box,
+    .footer-column {
+      text-align: center;
+      flex: 1 1 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .newsletter {
+      flex-direction: column;
+    }
+  
+    .newsletter input,
+    .newsletter button {
+      width: 100%;
+    }
+  
+    .decorative-left,
+    .decorative-right {
+      display: none;
+    }
+  }
+  
